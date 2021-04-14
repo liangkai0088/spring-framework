@@ -49,6 +49,8 @@ class ConfigurableJtaPlatform implements JtaPlatform {
 	private final TransactionSynchronizationRegistry transactionSynchronizationRegistry;
 
 
+
+
 	/**
 	 * Create a new ConfigurableJtaPlatform instance with the given
 	 * JTA TransactionManager and optionally a given UserTransaction.
@@ -66,6 +68,10 @@ class ConfigurableJtaPlatform implements JtaPlatform {
 	}
 
 
+	/**
+	 * 梁恺spring learning
+	 * @return
+	 */
 	@Override
 	public TransactionManager retrieveTransactionManager() {
 		return this.transactionManager;
